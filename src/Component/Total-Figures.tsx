@@ -50,6 +50,19 @@ export default function TotalFigures(props: any) {
                         </span>
                         </Paper>
                     </div>
+                    <div className="mb-3">
+                        <Paper variant="outlined">
+                    <span className="d-flex flex-row mt-4">
+                        <img className="mt-3 mx-3"
+                             src="https://covid19-dashboard.arimac.digital/img/icon-5.5c1a2221.gif" alt="" width="30"
+                             height="30"/>
+                        <span className="d-flex flex-column">
+                        <p className="font-monospace">Hospitalized</p>
+                        <p className="fs-1 fw-bold text-danger data">{props.hospitalized}</p>
+                        </span>
+                        </span>
+                        </Paper>
+                    </div>
                     <div className="text-center text-muted">
                         <p><small>Last update at: {props.updatedDate}</small></p>
                     </div>
