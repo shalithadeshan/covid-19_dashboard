@@ -3,8 +3,8 @@ import './App.css';
 import {Card, CardContent, makeStyles} from "@material-ui/core";
 import DailyFigures from "./Component/Daily-Figures";
 import TotalFigures from "./Component/Total-Figures";
-import DailyPcrTests from "./Component/Daily-Pcr-Tests";
 import axios from 'axios';
+import DailyPcrTests from "./Component/Daily-Pcr-Tests";
 
 const useStyles = makeStyles({
     root: {
@@ -70,7 +70,7 @@ function App() {
             <div className="row mt-5">
 
                 {/*Total section*/}
-                <div className="col-lg-3">
+                <div className="col-lg-3 order-lg-1 order-2" >
                     <TotalFigures
                         totalCase={totalCases}
                         totalDeaths={totalDeaths}
@@ -81,24 +81,25 @@ function App() {
 
                 {/*total vs active section*/}
 
-                <div className="col-lg-6">
+                <div className="col-lg-6 order-lg-2 order-1">
                     <Card>
                         <CardContent>
                             <div className="d-flex flex-column justify-content-center text-center">
                                 <p className="fw-bold">Daily PCR Tests</p>
                             </div>
-                            {dailyPcrTest
-                                .map((testing: any) => (
-                                    <div key={testing.date}>
-                                        <DailyPcrTests date={testing.date} count={testing.count}/>
-                                    </div>
-                                ))}
+                            <div className="row">
+                                {dailyPcrTest.slice(381).slice(100)
+                                    .map((testing: any) => (
+                                            <div key={testing.date} className="col-lg-4">
+                                                <DailyPcrTests date={testing.date} count={testing.count}/>
+                                            </div>
+                                    ))}
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
-
                 {/*daily section*/}
-                <div className="col-lg-3">
+                <div className="col-lg-3 order-lg-3 order-3" data-aos="zoom-in" data-aos-delay="300">
                     <DailyFigures
                         newCases={newCases}
                         deaths={deaths}

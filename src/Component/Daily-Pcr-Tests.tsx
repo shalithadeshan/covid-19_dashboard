@@ -1,68 +1,17 @@
 import React from 'react';
-// import {Chart} from "primereact/chart";
+import {Chip, Paper} from "@material-ui/core";
+
 
 export default function DailyPcrTests(props: any) {
-
-    // const BarChartDemo = () => {
-    //     const basicData = {
-    //         labels: [props.date],
-    //         dataset: [
-    //             {
-    //                 label: props.date,
-    //                 backgroundColor: '#42A5F5',
-    //                 data: [props.count]
-    //             }
-    //         ]
-    //     }
-    //     // console.log(basicData);
-    //
-    //     const getLightTheme = () => {
-    //         let basicOptions = {
-    //             maintainAspectRatio: false,
-    //             aspectRatio: .8,
-    //             plugins: {
-    //                 legend: {
-    //                     labels: {
-    //                         color: '#495057'
-    //                     }
-    //                 }
-    //             },
-    //             scales: {
-    //                 x: {
-    //                     ticks: {
-    //                         color: '#495057'
-    //                     },
-    //                     grid: {
-    //                         color: '#ebedef'
-    //                     }
-    //                 },
-    //                 y: {
-    //                     ticks: {
-    //                         color: '#495057'
-    //                     },
-    //                     grid: {
-    //                         color: '#ebedef'
-    //                     }
-    //                 }
-    //             }
-    //         };
-    //         return {
-    //             basicOptions
-    //         }
-    //     }
-    // }
-
-    // const { basicOptions } = getLightTheme();
-
+    console.log(props.count);
+    console.log(props.date);
     return (
-        // <div className="card">
-        //     <h5>Vertical</h5>
-        //     <Chart type="bar" data={basicData} options={basicOptions} />
-        // </div>
+        <Paper variant="outlined" className="mb-2">
+            <div>
+                <Chip label={props.date} className="d-flex justify-content-center mt-2"/>
+                <p className="d-flex justify-content-center mt-2 text-success fw-bold">{props.count}</p>
+            </div>
+        </Paper>
 
-        <div>
-            <p>{props.date}</p>
-            <p>{props.count}</p>
-        </div>
     );
 }
