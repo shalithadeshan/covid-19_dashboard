@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/covid-19_dashboard/static/css/main.14c0ce18.chunk.css",
+    "main.js": "/covid-19_dashboard/static/js/main.f1052628.chunk.js",
+    "main.js.map": "/covid-19_dashboard/static/js/main.f1052628.chunk.js.map",
+    "runtime-main.js": "/covid-19_dashboard/static/js/runtime-main.e96f6cf3.js",
+    "runtime-main.js.map": "/covid-19_dashboard/static/js/runtime-main.e96f6cf3.js.map",
+    "static/css/2.d45d6843.chunk.css": "/covid-19_dashboard/static/css/2.d45d6843.chunk.css",
+    "static/js/2.c557e0d4.chunk.js": "/covid-19_dashboard/static/js/2.c557e0d4.chunk.js",
+    "static/js/2.c557e0d4.chunk.js.map": "/covid-19_dashboard/static/js/2.c557e0d4.chunk.js.map",
+    "static/js/3.46ee074a.chunk.js": "/covid-19_dashboard/static/js/3.46ee074a.chunk.js",
+    "static/js/3.46ee074a.chunk.js.map": "/covid-19_dashboard/static/js/3.46ee074a.chunk.js.map",
+    "index.html": "/covid-19_dashboard/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/covid-19_dashboard/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.14c0ce18.chunk.css.map": "/covid-19_dashboard/static/css/main.14c0ce18.chunk.css.map",
+    "static/js/2.c557e0d4.chunk.js.LICENSE.txt": "/covid-19_dashboard/static/js/2.c557e0d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e96f6cf3.js",
+    "static/css/2.d45d6843.chunk.css",
+    "static/js/2.c557e0d4.chunk.js",
+    "static/css/main.14c0ce18.chunk.css",
+    "static/js/main.f1052628.chunk.js"
+  ]
+}
