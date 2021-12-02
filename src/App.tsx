@@ -32,8 +32,10 @@ function App() {
 
         axios.get('https://www.hpb.health.gov.lk/api/get-current-statistical')
             .then(res => {
+                // console.log(res.data);
                 if (res.status === 200) {
                     const cases = res.data.data
+                    // console.log(cases);
                     setTotalCases(cases.local_total_cases);
                     setTotalDeaths(cases.local_deaths);
                     setTotalRecovered(cases.local_recovered);
@@ -74,7 +76,7 @@ function App() {
                     <TotalFigures
                         totalCase={totalCases}
                         totalDeaths={totalDeaths}
-                        totalrecovered={totalRecovered}
+                        totalRecovered={totalRecovered}
                         updatedDate={updatedDate}
                         hospitalized={hospitalized}/>
                 </div>
@@ -88,7 +90,7 @@ function App() {
                                 <p className="fw-bold">Daily PCR Tests</p>
                             </div>
                             <div className="row">
-                                {dailyPcrTest.slice(381).slice(100)
+                                {dailyPcrTest.slice(0).slice(100)
                                     .map((testing: any) => (
                                             <div key={testing.date} className="col-lg-4">
                                                 <DailyPcrTests date={testing.date} count={testing.count}/>

@@ -3,8 +3,8 @@ import {Chip, Paper} from "@material-ui/core";
 
 
 export default function DailyPcrTests(props: any) {
-    console.log(props.count);
-    console.log(props.date);
+    // console.log(props.count);
+    // console.log(props.date);
     return (
         <Paper variant="outlined" className="mb-2">
             <div>

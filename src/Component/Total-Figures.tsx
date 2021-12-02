@@ -45,7 +45,7 @@ export default function TotalFigures(props: any) {
                              height="30"/>
                         <span className="d-flex flex-column">
                         <p className="font-monospace">Total Recovered</p>
-                        <p className="fs-1 fw-bold text-success data">{props.totalrecovered}</p>
+                        <p className="fs-1 fw-bold text-success data">{props.totalRecovered}</p>
                         </span>
                         </span>
                         </Paper>
